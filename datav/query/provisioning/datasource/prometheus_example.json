@@ -2,6 +2,6 @@
     "id": 2,
     "name": "prometheus",
     "type": "prometheus",
-    "url": "http://localhost:9090",
+    "url": "http://10.0.247.102:60909",
     "teamId": 1
 }

@@ -275,7 +275,7 @@ const LegendTable = memo(
                 if (!isEmpty(inactiveSeries)) {
                   inactive = inactiveSeries.includes(v.name)
                 } else {
-                  inactive = !v.name.match(defaultLegend)
+                  inactive = defaultLegend && !v.name.match(defaultLegend)
                 }
                 return (
                   <Tr verticalAlign='top' width='100%'>

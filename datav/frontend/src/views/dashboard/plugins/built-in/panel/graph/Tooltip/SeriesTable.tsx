@@ -164,7 +164,7 @@ const SeriesTable = memo(
                 if (!isEmpty(inactiveSeries)) {
                   inactive = inactiveSeries.includes(v.name)
                 } else [
-                  inactive = !v.name.match(defaultLegend)
+                  inactive = defaultLegend && !v.name.match(defaultLegend)
                 ]
                 if (inactive) {
                   // hiding inactive tooltips
